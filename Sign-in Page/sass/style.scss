@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(9, 121, 103);
+    background: linear-gradient(45deg, rgba(9, 121, 103, 1) 16%, rgba(0, 206, 255, 1) 100%);
+    background-repeat: no-repeat;
+    font-family: poppins;
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .main-container {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            position: relative;
+            width: 30%;
+
+            h1 {
+                color: rgb(182, 6, 182);
+                margin: 10px;
+                text-align: center;
+            }
+
+            p {
+                color: black;
+                margin: 10px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            a {
+                text-decoration: none;
+                color: orange;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                .check-box> :not(p) {
+                    margin: 3px;
+                    cursor: pointer;
+                }
+
+                .icons-inputs {
+                    width: 75%;
+                    padding: 10px;
+                    color: green;
+                    min-width: 50px;
+                    text-align: center;
+
+
+                }
+
+
+                .inputs-text {
+                    i {
+                        position: absolute;
+                        width: 1%;
+                        height: 4%;
+                        border: solid rgb(187, 187, 187);
+                        border-width: 0 1px 0 0;
+                    }
+
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .input-fields {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+
+
+                .sign-in-form-inner-container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 80%;
+                    margin: 20px 0;
+                }
+
+                #sign-in-form-button {
+                    text-transform: uppercase;
+                    width: 30%;
+                    background-color: rgb(182, 6, 88);
+                    color: white;
+                    padding: 10px 2px;
+                    margin: 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+
+                #forgot-password {
+                    color: blue;
+                }
+            }
+        }
+
+        .secondary-container {
+            margin-top: 20px;
+            width: 10%;
+
+            p {
+                color: white;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin: 15px;
+
+
+                i {
+                    font-size: 40px;
+                    border-radius: 100px;
+                }
+
+                .facebook-icon {
+                    color: blue;
+                }
+
+                .instagram-icon {
+                    color: red;
+                }
+
+                .twitter-icon {
+                    color: darkblue;
+                }
+            }
+
+        }
+    }
+}
